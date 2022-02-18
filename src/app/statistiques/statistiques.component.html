@@ -1,0 +1,38 @@
+
+<div style="width: 40%; float:left; margin-left :5px ; padding : 1em ;">
+
+<div style="display: block">
+<div style="color:black; font-weight: bold;text-align:center;">Selon la filière</div>
+  <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"></canvas>
+</div>
+<br>
+<div style="display: block">
+<div style="color:black; font-weight: bold;text-align:center;">Combien sur la promo ont trouvé ?</div>
+  <canvas baseChart
+          [data]="pieChartData3"
+          [labels]="pieChartLabels3"
+          [chartType]="pieChartType3"></canvas>
+</div>
+</div>
+
+<div style="width: 40%; float:right; margin-right :15px ; padding : 1em ;">
+
+<div style="display: block">
+<div style="color:black; font-weight: bold;text-align:center;">Selon le sexe</div>
+  <canvas baseChart
+          [data]="pieChartData2"
+          [labels]="pieChartLabels2"
+          [chartType]="pieChartType2"></canvas>
+</div>
+<br>
+<div style="display: block">
+<div style="color:black; font-weight: bold;text-align:center;">Entreprise</div>
+  <canvas baseChart
+          [data]="pieChartData4"
+          [labels]="pieChartLabels4"
+          [chartType]="pieChartType"></canvas>
+</div>
+</div>

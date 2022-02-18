@@ -1,0 +1,43 @@
+
+  <h2>
+    Gérer les enquêtes
+  </h2>
+<a class="btn btn-failed" href="add"> + Ajouter une nouvelle enquête</a>
+
+  <table style="color:black; font-weight: bold;">
+    <thead>
+      <tr>
+      <th>NumEtudiant</th>
+      <th>Nom </th>
+       <th>Prenom</th>
+        <th>Filiere</th>
+         <th>Sexe</th>
+        <th>Nom entreprise  </th>
+        <th>Remuneration brut en Euro  </th>
+         <th>Ville du CDI </th>
+         <th>Supprimer</th>
+         <th>Modifier</th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of enquete">
+      <td>{{s.numEtudiant}}</td>
+      <td>{{s.nom}}</td>
+      <td>{{s.prenom}}</td>
+      <td>{{s.formation}}</td>
+      <td>{{s.sexe}}</td>
+      <td>{{s.entreprise}}</td>
+        <td>{{s.remuneration}}</td>
+        <td>{{s.ville}}</td>
+<td>
+<button class="btn btn-failed" (click)="deleteenquete(s.id)">Supprimer</button>
+</td>
+<td>
+<button class="btn btn-failed" (click)="deleteenquete(s.id)">Modifier</button>
+</td>
+
+      </tr>
+    </tbody>
+  </table>
+

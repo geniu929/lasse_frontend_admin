@@ -1,0 +1,105 @@
+<div class="d-flex justify-content-center h-100">
+
+
+  <div class="col-md-6">
+    <h2 class="text-center">
+      Formulaire de l'enquête sur qui a trouvé un CDI après son Master.
+
+
+    </h2>
+
+    <form>
+
+<div style="width: 40%; float:left; margin-left :5px ; padding : 1em ;">
+<div>
+        <label>
+         Numéro étudiant :
+        </label>
+        <input type="text" [(ngModel)]="enquete.numEtudiant" placeholder="numEtudiant" name="numEtudiant" class="form-control" id="numEtudiant">
+      </div>
+      <div>
+        <label>
+         Nom :
+        </label>
+        <input type="text" [(ngModel)]="enquete.nom" placeholder="nom" name="nom" class="form-control" id="nom">
+      </div>
+      <div>
+        <label>
+         Prenom :
+        </label>
+        <input type="text" [(ngModel)]="enquete.prenom" placeholder="prenom" name="prenom" class="form-control" id="prenom">
+      </div>
+
+  <div>
+        <label>
+         Age :
+        </label>
+        <input type="number" [(ngModel)]="enquete.age" placeholder="age" name="age" class="form-control" id="age">
+      </div>
+      <div>
+        <label>
+         sexe :
+        </label>
+       <select name="sexe" class="form-control" id="sexe"  [(ngModel)]="enquete.sexe">
+
+          <option >Femme</option>
+          <option >Homme</option>
+
+        </select>    </div>
+
+      <div>
+
+        <label >Formation:</label>
+            <select name="formation"  class="form-control" id="formation"  [(ngModel)]="enquete.formation" required>
+
+          <option >PLS</option>
+          <option >EI2D</option>
+          <option >M3IR</option>
+        </select>
+
+      </div>
+</div>
+
+<div style="width: 40%; float:right; margin-right :10px ; padding : 1em ;">
+      <div>
+        <label>
+         Entreprise :
+        </label>
+        <input type="text" [(ngModel)]="enquete.entreprise" placeholder="entreprise" name="entreprise" class="form-control" id="entreprise">
+      </div>
+
+      <div>
+        <label>
+         Fonction :
+        </label>
+        <input type="text" [(ngModel)]="enquete.fonction" placeholder="fonction" name="fonction" class="form-control" id="fonction">
+      </div>
+
+      <div>
+        <label>
+         Remuneration Brut en Euro :
+        </label>
+        <input type="number" [(ngModel)]="enquete.remuneration" placeholder="remuneration" name="remuneration" class="form-control" id="remuneration">
+      </div>
+      <div>
+        <label>
+         Ville du stage :
+        </label>
+        <input type="text" [(ngModel)]="enquete.ville" placeholder="ville" name="ville" class="form-control" id="ville">
+      </div>
+      <div>
+        <label>
+         Avantages :
+        </label>
+        <input type="text" [(ngModel)]="enquete.avantages" placeholder="avantages" name="avantages" class="form-control" id="avantages">
+      </div>
+
+
+
+<br>
+
+      <button class="btn btn-success" (click)="createenquete()">Valider</button>
+  </div>  </form>
+
+
+  </div>
